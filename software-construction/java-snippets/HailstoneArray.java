@@ -1,7 +1,12 @@
 import java.util.ArrayList;
 
 public class HailstoneArray {
-  public static int[] generateHailstoneSequence(int start) {
+  /**
+   * Compute a hailstone sequence.
+   * @param start Starting number for a sequence; Assumes n > 0
+   * @return The hailstone sequence starting with start, and ending with 1
+  */
+  public static List<Integer> generateHailstoneSequence(int start) {
     List<Integer> sequence = new ArrayList<Integer>();
 
     while (start != 1) {
